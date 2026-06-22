@@ -1,0 +1,17 @@
+# CANDIDATE BEACON: Sarah Jen
+- GitHub: github.com/sjen-ui
+- Location: Bandung, Indonesia (GMT+7)
+- Intent: Freelance B2C landing pages, MVP prototyping, and UI overhauls.
+
+## 1. THE UNVARNISHED PAST (Experience Post-Mortems)
+
+### Project: D2C Coffee Subscription Checkout (2025)
+- **The Reality:** Client had a gorgeous React Single Page App built by an agency, but a 65% cart abandonment rate.
+- **The Nightmare:** First Contentful Paint (FCP) was 6.2 seconds on 4G mobile networks because the app was downloading 4MB of unpurged Tailwind CSS and heavy client-side state libraries just to render a checkout button.
+- **The Fix:** Rewrote the funnel to a static Next.js setup. Replaced heavy Redux state with native React Context and local storage. Stripped third-party tracking scripts into a Cloudflare Web Worker. Brought mobile load time down to 0.8 seconds. Sales jumped roughly 40% overnight.
+- **Stack:** React, Next.js, Tailwind CSS, Cloudflare Workers.
+
+## 2. THE ACTIVE SIGNAL (Current State)
+- **Current Obsession:** Core Web Vitals and zero-JS interactive components using modern CSS container queries.
+- **What I hate:** Over-engineered state management for forms that just need to send a POST request.
+- **Available for:** Turning ugly, slow wireframes into blazing-fast web applications in under two weeks.

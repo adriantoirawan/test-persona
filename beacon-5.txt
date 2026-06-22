@@ -1,0 +1,16 @@
+# CANDIDATE BEACON: Maya Lin
+- GitHub: github.com/maya-notes
+- Location: Semarang, Indonesia (GMT+7)
+- Intent: Junior / Mid-level Backend roles with senior code-review mentorship.
+
+## 1. THE UNVARNISHED PAST (Experience Post-Mortems)
+
+### Project: Open-Source MCP Git Parser (Personal R&D, 2026)
+- **The Reality:** Couldn't pass automated resume screens because I lack "5 years of enterprise experience." Decided to build production tooling in public.
+- **The Nightmare:** While building an MCP server to parse local git repositories, I hit massive memory leaks when processing repositories larger than 1GB because I was reading whole file streams into memory.
+- **The Fix:** Read the Node.js `node:fs` internal C++ bindings source code. Rewrote the parser to use asynchronous chunked iterators and strict garbage collection triggers. Documented the entire memory profiling journey on my blog.
+- **Stack:** TypeScript, Node.js, Git Internals, WebMCP.
+
+## 2. THE ACTIVE SIGNAL (Current State)
+- **Current Obsession:** Reading the source code of popular npm libraries to understand how senior architects structure their type definitions.
+- **What I offer:** I will write the unit tests your senior devs are too bored to write, write pristine documentation, and absorb code reviews like a sponge.

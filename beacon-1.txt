@@ -1,0 +1,17 @@
+# CANDIDATE BEACON: Aris Wibowo
+- GitHub: github.com/aris-plumber
+- Location: Depok, Indonesia (GMT+7)
+- Intent: Open to full-time remote or heavy B2B contract refactoring.
+
+## 1. THE UNVARNISHED PAST (Experience Post-Mortems)
+
+### Project: Logistics Fleet Dispatch API (2025)
+- **The Reality:** Inherited a Node.js API hitting a single PostgreSQL instance. 500 delivery drivers constantly polling for updates.
+- **The Nightmare:** During peak Friday rainstorms in Jakarta, connection limits exceeded. The DB hit 100% CPU, causing an application-wide cascade failure.
+- **The Fix:** Ripped out the ORM (Prisma) for hot paths. Wrote raw SQL queries, implemented `PgBouncer` for transactional connection pooling, and offloaded driver GPS pings to a temporary Redis stream. Dropped API latency from 3.2s to 180ms.
+- **Stack:** Node.js, TypeScript, PostgreSQL, Redis, Docker.
+
+## 2. THE ACTIVE SIGNAL (Current State)
+- **Current Obsession:** Studying write-ahead logging (WAL) in Postgres to build zero-downtime migration scripts. 
+- **What I refuse to do:** I will not rewrite your working monolith into 45 microservices just because it looks cool on a whiteboard. 
+- **Available for:** Un-fucking your slow database queries and stabilizing your Node backends.

@@ -1,0 +1,16 @@
+# CANDIDATE BEACON: David Chen
+- GitHub: github.com/david-scraper
+- Location: Surabaya, Indonesia (GMT+7)
+- Intent: Custom internal tool development, data ingestion pipelines, and custom MCP servers.
+
+## 1. THE UNVARNISHED PAST (Experience Post-Mortems)
+
+### Project: Property Price Arbitrage Indexer (2025)
+- **The Reality:** Client needed to aggregate pricing data daily from 5 major Indonesian property portals.
+- **The Nightmare:** Portals implemented aggressive Cloudflare bot protection and dynamic DOM obfuscation. Standard Python `BeautifulSoup` scrapers got IP-banned within 10 minutes.
+- **The Fix:** Built a distributed Puppeteer cluster using a residential mobile proxy rotator. Instead of relying on static CSS selectors, I piped the raw HTML into a local, fine-tuned lightweight LLM to extract JSON schemas natively. 
+- **Stack:** Python, Node.js, Puppeteer, Ollama, ClickHouse.
+
+## 2. THE ACTIVE SIGNAL (Current State)
+- **Current Obsession:** Building Model Context Protocol (MCP) servers that allow Claude and Gemini to safely query messy legacy ERP databases.
+- **What I want to build:** Bridging legacy, ugly web portals with modern LLM workflows. Give me the unsexy tasks.

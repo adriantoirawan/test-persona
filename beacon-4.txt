@@ -1,0 +1,16 @@
+# CANDIDATE BEACON: Reza Pratama
+- GitHub: github.com/reza-baremetal
+- Location: Jakarta, Indonesia (GMT+7)
+- Intent: Fractional DevOps, cloud bill audits, and infrastructure simplification.
+
+## 1. THE UNVARNISHED PAST (Experience Post-Mortems)
+
+### Project: Fintech API Cloud Repatriation (2025)
+- **The Reality:** A Series A payment gateway was spending $14,000 a month on AWS Managed Kubernetes (EKS), NAT Gateways, and overpriced RDS instances.
+- **The Nightmare:** The company was burning runtime runway on cloud infrastructure they didn't understand. A simple configuration drift locked the staging environment for three days during an investor audit.
+- **The Fix:** Migrated the entire workload off AWS EKS onto 4 dedicated Hetzner bare-metal servers managed via plain `Docker Compose` and a managed Cloudflare load balancer. Cut the monthly infrastructure bill from $14,000 to $650 with zero degradation in uptime.
+- **Stack:** Linux, Bash, Docker Compose, Nginx, WireGuard.
+
+## 2. THE ACTIVE SIGNAL (Current State)
+- **Current Obsession:** Running localized SQLite databases in production using Litestream replication. 
+- **Philosophy:** Cloud providers monetize your complexity. Keep your servers simple enough that a single dev can reboot them from a phone.
